@@ -1,0 +1,23 @@
+name: SpigotPluginTemplate
+version: 1.0
+author: wolfdev1
+main: wolfdev1.com.github.SpigotPluginTemplate.SpigotPluginTemplate
+api-version: 1.17
+
+permissions:
+  operatorperm:
+    description: The operator perm
+    default: op
+
+commands:
+  staffchat:
+    description: A chat for the server staff members
+    aliases: [ sc, staffchat ]
+  advancedsay:
+    description: A simple but advanced say command
+    aliases: [asay, adsay]
+  report:
+    description: A simple report comand
+    aliases: [re, r]
+
+
