@@ -13,6 +13,12 @@ commands:
   staffchat:
     description: A chat for the server staff members
     aliases: [ sc, staffchat ]
+  invlist:
+    description: Shows a player inventory
+    aliases: [inventorylist, ilist]
+  userinfo:
+    description: Get the location and world of a player
+    aliases: [info, uinfo]
   advancedsay:
     description: A simple but advanced say command
     aliases: [asay, adsay]
