@@ -14,6 +14,9 @@ public class SpigotPluginTemplate extends JavaPlugin
         getServer().getPluginManager().registerEvents(new MineLogger(), this);
         this.getCommand("report").setExecutor(new ReportCommand());
         this.getCommand("userinfo").setExecutor(new UserInfo());
+        this.getCommand("pvp").setExecutor(new PvpCommand());
+        this.getCommand("heal").setExecutor(new HealCommand());
+        this.getCommand("kick").setExecutor(new KickCommand());
         this.getCommand("invlist").setExecutor(new InvList());
         this.getCommand("staffchat").setExecutor(new StaffChat());
         this.getCommand("advancedsay").setExecutor(new AdvancedSayCommand());

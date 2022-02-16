@@ -19,6 +19,14 @@ commands:
   userinfo:
     description: Get the location and world of a player
     aliases: [info, uinfo]
+  pvp:
+    description: A simple command to set the pvp mode
+    aliases: [pvpmode]
+  heal:
+    description: This command heal an user
+    aliases: [healuser, h]
+  kick:
+    description: A simple kick command, but is best then default kick xD
   advancedsay:
     description: A simple but advanced say command
     aliases: [asay, adsay]
