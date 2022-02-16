@@ -17,6 +17,7 @@ public class SpigotPluginTemplate extends JavaPlugin
         this.getCommand("pvp").setExecutor(new PvpCommand());
         this.getCommand("heal").setExecutor(new HealCommand());
         this.getCommand("kick").setExecutor(new KickCommand());
+        this.getCommand("punish").setExecutor(new PunishCommand());
         this.getCommand("invlist").setExecutor(new InvList());
         this.getCommand("staffchat").setExecutor(new StaffChat());
         this.getCommand("advancedsay").setExecutor(new AdvancedSayCommand());

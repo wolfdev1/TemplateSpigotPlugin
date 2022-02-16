@@ -27,6 +27,10 @@ commands:
     aliases: [healuser, h]
   kick:
     description: A simple kick command, but is best then default kick xD
+    aliases: [kickmember, kickuser]
+  punish:
+    description: The tipical ban command but best xD
+    aliases: [punishuser, p]
   advancedsay:
     description: A simple but advanced say command
     aliases: [asay, adsay]
