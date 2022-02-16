@@ -12,30 +12,48 @@ permissions:
 commands:
   staffchat:
     description: A chat for the server staff members
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [ sc, staffchat ]
   invlist:
     description: Shows a player inventory
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [inventorylist, ilist]
   userinfo:
     description: Get the location and world of a player
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [info, uinfo]
   pvp:
     description: A simple command to set the pvp mode
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [pvpmode]
   heal:
     description: This command heal an user
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [healuser, h]
   kick:
     description: A simple kick command, but is best then default kick xD
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [kickmember, kickuser]
   punish:
     description: The tipical ban command but best xD
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [punishuser, p]
   advancedsay:
     description: A simple but advanced say command
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [asay, adsay]
   report:
     description: A simple report comand
+    permission: operatorperm
+    permission-message: Sorry but only staff team members can perform this action
     aliases: [re, r]
 
 

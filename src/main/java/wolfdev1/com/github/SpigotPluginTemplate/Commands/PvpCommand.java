@@ -11,9 +11,7 @@ import java.util.Objects;
 public class PvpCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
-        if(!sender.isOp()) {
-            sender.sendMessage(ChatColor.RED + "Sorry, but only staff team members can perform this action");
-        }else{
+
             if(args.length < 1) {
                 sender.sendMessage(ChatColor.RED + "You need to provide a boolean value, true or false");
             }else{
@@ -29,7 +27,6 @@ public class PvpCommand implements CommandExecutor {
                     sender.sendMessage(ChatColor.RED + "You need to provide a boolean value, true or false");
                 }
             }
-        }
         return false;
     }
 }

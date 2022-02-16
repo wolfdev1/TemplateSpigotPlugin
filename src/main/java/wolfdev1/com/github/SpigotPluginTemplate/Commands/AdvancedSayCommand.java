@@ -11,10 +11,6 @@ public class AdvancedSayCommand implements CommandExecutor {
     @Override
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
-        if (!sender.isOp()) {
-            sender.sendMessage(ChatColor.RED + "Oops! Only staff members can perform this action");
-        }else{
             if(args.length < 1) {
                 sender.sendMessage(ChatColor.RED + "Oops! You need to provide a message to send");
             }else{
@@ -26,7 +22,6 @@ public class AdvancedSayCommand implements CommandExecutor {
                 Bukkit.broadcastMessage(ChatColor.DARK_RED +
                         "[" + ChatColor.LIGHT_PURPLE + "STAFF" + ChatColor.DARK_RED +"] " + ChatColor.AQUA + sb);
             }
-    }
         return false;
     }
 }

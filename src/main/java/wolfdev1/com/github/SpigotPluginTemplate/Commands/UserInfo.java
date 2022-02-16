@@ -13,11 +13,6 @@ public class UserInfo implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args)
     {
-        if(!sender.isOp())
-        {
-            sender.sendMessage(ChatColor.RED + "Sorry but only staff members can use this command");
-        }else
-        {
             if(args.length < 1) {
                 sender.sendMessage(ChatColor.RED + "Hey! You need to select an user to get their info");
             }else
@@ -45,7 +40,6 @@ public class UserInfo implements CommandExecutor {
                                             Objects.requireNonNull(Bukkit.getPlayer(args[0])).getPing());
                         }
                     }
-                }
             }
         }
         return false;

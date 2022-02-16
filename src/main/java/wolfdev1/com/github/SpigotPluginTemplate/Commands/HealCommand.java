@@ -12,9 +12,6 @@ import java.util.Objects;
 public class HealCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
-        if(!sender.isOp()) {
-            sender.sendMessage(ChatColor.RED + "Sorry but only staff team members can perform this action");
-        }else{
             if(args.length < 1) {
                 GameMode gm = Objects.requireNonNull(Bukkit.getPlayer(sender.getName())).getGameMode();
                 if(gm == GameMode.CREATIVE  || gm == GameMode.SPECTATOR) {
@@ -31,7 +28,6 @@ public class HealCommand implements CommandExecutor {
                     sender.sendMessage("The health of " + args[0] + " has been regenerated");
                     Objects.requireNonNull(Bukkit.getPlayer(sender.getName())).setHealth(20);
                     }
-                }
             }
         return false;
     }

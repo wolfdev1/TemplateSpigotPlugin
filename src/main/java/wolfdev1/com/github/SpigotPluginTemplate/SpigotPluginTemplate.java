@@ -5,6 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import wolfdev1.com.github.SpigotPluginTemplate.Commands.*;
 import wolfdev1.com.github.SpigotPluginTemplate.Events.MineLogger;
+import wolfdev1.com.github.SpigotPluginTemplate.Events.PlayerChangeWorldLogger;
 
 public class SpigotPluginTemplate extends JavaPlugin
 
@@ -12,6 +13,7 @@ public class SpigotPluginTemplate extends JavaPlugin
     public void onEnable() {
         Bukkit.getLogger().info(ChatColor.AQUA + "The " + this.getName() + "plugin has been successfully started globally");
         getServer().getPluginManager().registerEvents(new MineLogger(), this);
+        getServer().getPluginManager().registerEvents(new PlayerChangeWorldLogger(), this);
         this.getCommand("report").setExecutor(new ReportCommand());
         this.getCommand("userinfo").setExecutor(new UserInfo());
         this.getCommand("pvp").setExecutor(new PvpCommand());

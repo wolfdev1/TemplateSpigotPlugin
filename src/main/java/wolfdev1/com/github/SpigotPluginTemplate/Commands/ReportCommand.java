@@ -12,10 +12,6 @@ import java.util.Objects;
 public class ReportCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        if(args.length < 2) {
-
-            sender.sendMessage(ChatColor.RED + "Oops, you need to select a user and a reason, example: /report <user> <reason>");
-        }else{
             if(Bukkit.getPlayer(args[0]) == null) {
                 sender.sendMessage(ChatColor.RED + args[0] + " is not a valid user, try again");
             }else{
@@ -39,7 +35,6 @@ public class ReportCommand implements CommandExecutor {
                             ChatColor.WHITE + "" + ChatColor.BOLD + "User Reported: " + ChatColor.RESET + "" + ChatColor.LIGHT_PURPLE + args[0] + "\n" +
                           ChatColor.WHITE  + "" + ChatColor.BOLD + "Reason: " + ChatColor.LIGHT_PURPLE + sb, "operatorperm");
                     }
-                }
             }
         }
         return false;
